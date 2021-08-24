@@ -1,0 +1,58 @@
+
+.MyWorksItem {
+    display: inline-block;
+    height: 100%;
+    width: 450px;
+    background-color: #dddddd;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.MyWorksItemTitle {
+    height: 65%;
+    border: 1px solid black;
+}
+
+.MyWorksItemTitleImg {
+    background-image: url('https://icdn.lenta.ru/images/2021/04/27/16/20210427163138131/square_320_c09ebae17387b7d6eeb9fa0d42afe5ee.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MyWorksItemMain {
+    height: 35%;
+    border: 1px solid black;
+}
+
+.MyWorksItemMain p {
+    margin: 10px 0 0 10px;
+}
+
+.MyWorksItemMainName p {
+    display: inline-block;
+    background-color: #7f7f7f;
+}
+
+.MyWorksItemMainDescr p {
+    display: inline-block;
+    background-color: #7f7f7f;
+    padding: 0 260px 40px 0;
+}
+
+@media (max-width: 1308px){
+    .MyWorksItem {
+        height:370px;
+        width:348px;
+        margin-bottom: 10px;
+    }
+    .MyWorksItemMainDescr p {
+        padding: 0 180px 40px 0;
+    }
+
+}

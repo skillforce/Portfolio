@@ -1,0 +1,65 @@
+.blockTitle {
+    width: 100%;
+    min-height: 400px;
+    background-color: #ffbebe;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.9fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas:
+    "."
+    "h"
+    ".";
+}
+
+.aboutMeTitle {
+    grid-area: h;
+    border: 1px solid black;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aboutMeText {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #dddddd;
+
+}
+
+.aboutMePhoto {
+    height: 100%;
+    width: 350px;
+    background-color: #dddddd;
+}
+
+@media(max-width: 950px){
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutMeTitle {
+        min-width: 350px;
+        margin: 50px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .aboutMeText {
+        font-size: 18px;
+            }
+    .aboutMePhoto {
+        height: 350px;
+        width: 300px;
+        background-color: #dddddd;
+        margin: 10px 20px;
+    }
+}

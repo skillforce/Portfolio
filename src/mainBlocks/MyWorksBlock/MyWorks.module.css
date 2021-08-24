@@ -1,0 +1,74 @@
+
+.blockTitle {
+    width: 100%;
+    min-height: 600px;
+    background-color: indianred;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.9fr;
+    grid-template-rows: 0.3fr 2fr 0.3fr;
+    grid-template-areas:
+    "."
+    "h"
+    ".";
+
+}
+
+.MyWorksBlock {
+    grid-area: h;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1.7fr;
+    grid-template-areas:
+    "h"
+    "c";
+}
+
+.MyWorksTitle {
+    grid-area: h;
+    border: 1px solid black;
+    min-height: 120px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.MyWorksTitle p {
+    display: inline-block;
+    background-color: #dddddd;
+}
+
+.MyWorksMain {
+    grid-area: c;
+    border: 1px solid black;
+    min-height: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1308px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .MyWorksMain {
+        flex-direction: column;
+    }
+    .MyWorksTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .MyWorksBlock{
+        margin:50px 0;
+    }
+
+}
+

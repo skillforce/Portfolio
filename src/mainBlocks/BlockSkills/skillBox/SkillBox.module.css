@@ -1,0 +1,44 @@
+.skillItem{
+    display: inline-block;
+    height:100%;
+    width: 300px;
+    background-color: #dddddd;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.skillItemTitle{
+    height: 60%;
+    border: 1px solid black;
+}
+
+.skillItemTitleImg{
+    background-color:#555555 ;
+    height: 75px;
+    width: 75px;
+    margin: 0 auto 40px auto;
+}
+
+
+
+.skillItemMain{
+    height: 40%;
+    border: 1px solid black;
+    }
+
+@media (max-width: 1295px){
+
+    .skillItem{
+        display: inline-block;
+        height:450px;
+        width: 350px;
+        background-color: #dddddd;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+
+}

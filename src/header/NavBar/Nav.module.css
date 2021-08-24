@@ -1,0 +1,17 @@
+.header_nav {
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: center;
+
+}
+
+.header_nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.header_nav a:hover{
+    color:white;
+}
