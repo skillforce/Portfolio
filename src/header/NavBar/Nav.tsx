@@ -15,7 +15,7 @@ export const Nav = () => {
         <div className={header_nav}>
           <HeaderElement img={me} text={'Me'} alt={'About me'} href={'#'}/>
           <HeaderElement img={skills} text={'Skills'} alt={'MySkills'} href={'#'}/>
-          <HeaderElement img={cases} text={'Portfolio'} alt={'Portfolio'} href={'#'}/>
+          <HeaderElement img={cases} text={'Cases'} alt={'Portfolio'} href={'#'}/>
           <HeaderElement img={contacts} text={'Contacts'} alt={'Contacts'} href={'#'}/>
         </div>
     )

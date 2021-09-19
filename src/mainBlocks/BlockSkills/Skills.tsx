@@ -10,7 +10,7 @@ export const Skills = () => {
             <div className={container}>
                 <div className={skillsBlock}>
                 <div className={skillsTitle}>
-                    <p>My skills</p>
+                    <span>My</span> <p>skills</p>
                 </div>
                 <div className={skillsMain}>
                     <SkillBox skill={'React'} skillDescr={'detailed skill descriptions'} skillImg={'none'}/>

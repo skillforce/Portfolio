@@ -3,18 +3,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 
 }
-.header_nav img{
-    width:35px;
-    height: 35px;
+
+
+.header_nav img {
+    width: 40px;
+    height: 40px;
+    filter: invert();
 }
 
-.header_nav a{
+.header_nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
 }
 
-.header_nav a:hover{
-    color:white;
+.header_nav a:hover {
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
+

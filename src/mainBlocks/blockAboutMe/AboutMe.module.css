@@ -6,14 +6,13 @@
     width: 100%;
     min-height: 400px;
     overflow: hidden;
-    position: relative;
     background-color: black;
 }
 
 .colorBlock{
     background-color: #ffb400;
-    position: absolute;
-    height: 200%;
+    position: fixed;
+    height: 235%;
     width: 100%;
     transform: rotate(
             -15deg
@@ -47,7 +46,7 @@
 
 .aboutMeText {
     display: inline-block;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     background-color: black;
     text-transform: uppercase!important;

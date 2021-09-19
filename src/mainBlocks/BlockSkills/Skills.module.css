@@ -1,10 +1,12 @@
 .blockTitle {
     width: 100%;
     min-height: 600px;
-    background-color:#f9cd0b;
+    background-color:black;
 }
 
 .container {
+    position: relative;
+    z-index: 111;
     width: 70%;
     margin: 0 auto;
     display: grid;
@@ -30,16 +32,24 @@
 
 .skillsTitle {
     grid-area: h;
-    border: 1px solid black;
     height: 150px;
     text-align: center;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 51px;
+    line-height: 62px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase!important;
 }
 
 .skillsTitle p{
     display: inline-block;
-    background-color: #dddddd;
+    color:#ffb400 ;
+
+
+}
+.skillsTitle span{
+    display: inline-block;
+    color:white ;
 }
 
 .skillsMain {
