@@ -1,7 +1,7 @@
 .blockTitle {
     width: 100%;
     min-height: 240px;
-    background-color: navajowhite;
+    background-color: black;
     display: grid;
     grid-template-columns: 1.9fr;
     grid-template-rows: 0.5fr 2fr 0.5fr;
@@ -20,22 +20,84 @@
 }
 
 .teleWorkBlock {
+    background-color: black;
+    position: relative;
+    z-index: 111;
     height: 160px;
-    border: 1px solid black;
+    border: 4px groove #ffb400;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    -webkit-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding: 10px 0;
+    white-space: break-spaces;
+}
+
+.teleWorkBlock span {
+    font-size: 45px;
+    display: inline-block;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase !important;
+    color: white;
+    line-height: 60px;
+    transition: all 0.8s ease;
 }
 
 .teleWorkBlock p {
-    font-size: 25px;
+    font-size: 45px;
     display: inline-block;
-    background-color: #7f7f7f;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase !important;
+    color: #ffb400;
+    line-height: 60px;
+    transition: all 0.8s ease;
 }
 
-@media(max-width: 590px){
-    .teleWorkBlock p{
+.teleWorkBlock:hover p {
+    color: white;
+    transition: all 0.8s ease;
+    cursor: default;
+}
+
+.teleWorkBlock:hover span {
+    color: #ffb400;
+    transition: all 0.8s ease;
+    cursor: default;
+}
+
+
+@media (max-width: 757px) {
+    .teleWorkBlock span {
+        font-size: 20px;
+    }
+
+    .teleWorkBlock p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 590px) {
+    .teleWorkBlock p {
         text-align: center;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .teleWorkBlock span {
+        font-size: 19px;
+        line-height: 26px;
+
+    }
+
+    .teleWorkBlock p {
+        font-size: 19px;
+        line-height: 26px;
     }
 }

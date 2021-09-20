@@ -9,7 +9,7 @@ export const Telework = () => {
     return (<div className={blockTitle}>
             <div className={container}>
                 <div className={teleWorkBlock}>
-                    <p>Considering options for remote work</p>
+                    <p>Considering options</p> <span>for remote work</span>
                     <div>  <Btns title={'employ me'}/></div>
 
                 </div>
