@@ -1,19 +1,32 @@
 .MyWorksItemTitleBtn {
     display: inline-block;
-    padding: 4px 25px;
-    border: 1px solid black;
-    background-color: #dddddd;
+    padding: 4px 15px;
+    background-color: #ffb400;
+    border-radius: 13px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase !important;
+    transition: all 0.8s ease;
 }
 
+.MyWorksItemTitleBtn:hover{
+    padding: 8px 30px;
+    background-color: white;
+    transition: all 0.8s ease;
+}
+.MyWorksItemTitleBtn a:hover{
+    color: #ffb400;
+    transition: all 0.8s ease;
+}
 .MyWorksItemTitleBtn a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 25px;
 }
 
 @media(max-width: 590px){
     .MyWorksItemTitleBtn {
-        padding: 4px 10px;
+        padding: 4px 4px;
     }
 
 }
