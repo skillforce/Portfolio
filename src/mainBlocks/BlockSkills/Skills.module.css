@@ -1,6 +1,6 @@
 .blockTitle {
     width: 100%;
-    min-height: 600px;
+    min-height: 800px;
     background-color:black;
 }
 
@@ -13,9 +13,10 @@
     grid-template-columns: 1.9fr;
     grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-template-areas:
-    "."
+    "h"
     "h"
     ".";
+
 
 }
 
@@ -32,7 +33,7 @@
 
 .skillsTitle {
     grid-area: h;
-    height: 150px;
+    min-height: 150px;
     text-align: center;
     font-size: 51px;
     line-height: 62px;
@@ -54,19 +55,13 @@
 
 .skillsMain {
     grid-area: c;
-    border: 1px solid black;
     min-height:350px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
-
-
-.skillItemMain{
-    height: 40%;
-    border: 1px solid black;
-}
 
 @media (max-width: 1295px){
     .container {
