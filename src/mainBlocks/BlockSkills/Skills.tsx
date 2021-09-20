@@ -5,7 +5,7 @@ import JSImg from './skillBox/skillImgIcon/JS.png';
 import HTMLImg from './skillBox/skillImgIcon/HTML.png';
 import CSSImg from './skillBox/skillImgIcon/CSS.png';
 import reduxImg from './skillBox/skillImgIcon/REDUX.png';
-import toolsImg from './skillBox/skillImgIcon/TOOLS.png';
+
 
 
 const {skillsTitle, blockTitle, skillsMain, container,skillsBlock} = s;

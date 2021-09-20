@@ -35,15 +35,32 @@
     height: 90px;
     width: 90px;
 }
+@media (max-width:1371px){
+    .skillItem {
+        display: inline-block;
+        height: 35%;
+        width: 300px;
+        background-color: black;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        margin: 10px;
+        border: 4px groove #ffb400;
+        border-radius: 30px;
+        color: white;
+        -webkit-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+    }
 
+}
 
 @media (max-width: 1295px) {
 
     .skillItem {
-        display: inline-block;
-        height: 450px;
-        width: 350px;
-        background-color: #dddddd;
+
+        height: 300px;
+        width: 250px;
         text-align: center;
         font-size: 25px;
         font-weight: 600;

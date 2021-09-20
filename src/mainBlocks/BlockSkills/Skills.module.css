@@ -1,7 +1,7 @@
 .blockTitle {
     width: 100%;
     min-height: 800px;
-    background-color:black;
+    background-color: black;
 }
 
 .container {
@@ -15,12 +15,12 @@
     grid-template-areas:
     "h"
     "h"
-    ".";
+    "h";
 
 
 }
 
-.skillsBlock{
+.skillsBlock {
     grid-area: h;
     display: grid;
     grid-auto-columns: 1fr 1fr 1fr;
@@ -39,53 +39,82 @@
     line-height: 62px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    text-transform: uppercase!important;
+    text-transform: uppercase !important;
 }
 
-.skillsTitle p{
+.skillsTitle p {
     display: inline-block;
-    color:#ffb400 ;
+    color: #ffb400;
 
 
 }
-.skillsTitle span{
+
+.skillsTitle span {
     display: inline-block;
-    color:white ;
+    color: white;
 }
 
 .skillsMain {
     grid-area: c;
-    min-height:350px;
+    min-height: 350px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
+@media (max-width: 1371px) {
+    .skillsBlock {
+        grid-template-rows:0.1fr 1.9fr;
+    }
 
+    .container {
+        grid-template-areas:
+    "h"
+    "h"
+    "h";
+    }
 
-@media (max-width: 1295px){
+    .blockTitle {
+        min-height: 1120px;
+    }
+
+}
+
+@media (max-width: 1290px) {
+    .blockTitle {
+        min-height: 840px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
     .container {
         display: flex;
         justify-content: center;
     }
+
     .skillsMain {
         border: 1px solid black;
-        min-height:350px;
+        min-height: 350px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
     }
-    .skillsBlock{
-        margin: 50px 0 ;
-       display: flex;
+
+    .skillsBlock {
+        margin: 50px 0;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    .skillsTitle{
+
+    .skillsTitle {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
+        margin: 0;
     }
 
 }
