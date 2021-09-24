@@ -2,7 +2,7 @@
 .blockTitle {
     width: 100%;
     min-height: 250px;
-    background-color:#006666;
+    background-color:black;
     display: grid;
     grid-template-columns: 1.9fr;
     grid-template-rows: 0.3fr 2fr 0.3fr;
@@ -17,10 +17,12 @@
     grid-area: h;
     width: 70%;
     margin: 0 auto;
+
 }
 
 .footerTitle {
-    border: 1px solid black;
+    position: relative;
+    z-index: 111;
     height:200px;
     text-align: center;
     font-size: 25px;
@@ -29,24 +31,50 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    border-radius: 13px;
+    -webkit-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+    border: 4px groove #ffb400;
+}
+.footerTitle_header{
+    display: flex;
 
 }
 
 .footerTitle p {
+    font-size: 25px;
     display: inline-block;
-    background-color: #dddddd;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase !important;
+    color: #ffb400;
+    margin-right: 5px;
 }
+.footerTitle span {
+    font-size: 25px;
+    display: inline-block;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase !important;
+    color: white;
+}
+
+
 
 .footerBox{
     min-width: 550px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+
 }
-.footerBox div{
-    height:70px;
-    min-width: 70px;
-    background-color: #7f7f7f;
+.footerBox img{
+    height:60px;
+    min-width: 60px;
+}
+.black_Img{
+    filter:invert();
 }
 
 
@@ -60,6 +88,25 @@
     }
 }
 
+@media(max-width: 580px) {
+    .footerTitle{
+        height:150px
+    }
+    .footerTitle p {
+        font-size: 15px;
+
+    }
+    .footerTitle span {
+        font-size: 15px;
+
+    }
+    .footerBox img{
+        height:50px;
+        min-width: 50px;
+    }
+
+}
+
 @media(max-width: 520px) {
     .footerTitle{
         border:none;
@@ -69,6 +116,15 @@
     .footerBox {
         border: none;
     }
+    .footerBox img{
+        height:40px;
+        min-width: 40px;
+    }
+}
 
+@media(max-width: 420px) {
+.footerBox{
+    min-width: 310px;
+}
 
 }

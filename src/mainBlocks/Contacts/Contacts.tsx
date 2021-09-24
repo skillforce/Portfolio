@@ -17,13 +17,16 @@ export const Contacts = () => {
                 <div className={contactsBlock}>
                     <div className={contactsTitle}>
                         <p>Contacts</p>
+                        <form >
                         <div className={contactsFormBox}>
                             <input placeholder={'please Enter your name'} type="text"/>
-                            <input placeholder={'please Enter your number'} type="text"/>
-                            <textarea placeholder={'please Enter your message'}/>
+                            <input placeholder={'Enter your number'} type="text"/>
+                            <textarea placeholder={'Enter your message'}/>
                         </div>
                         <Btns title={'Send'}/>
+                        </form>
                     </div>
+
                 </div>
             </div>
         </div>

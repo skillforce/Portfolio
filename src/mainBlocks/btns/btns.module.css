@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase !important;
     transition: all 0.8s ease;
+    margin:10px
 }
 
 .MyWorksItemTitleBtn:hover{
