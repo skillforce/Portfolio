@@ -1,4 +1,4 @@
-import s from './Nav.module.css';
+import s from './Nav.module.scss';
 import me from '../iconsImg/me.svg';
 import skills from '../iconsImg/skills.svg';
 import cases from '../iconsImg/cases.svg';

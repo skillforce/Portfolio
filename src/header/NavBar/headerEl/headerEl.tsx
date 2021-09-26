@@ -1,4 +1,4 @@
-import s from './headerEl.module.css';
+import s from './headerEl.module.scss';
 
 
 const {skillName, navOne} = s;

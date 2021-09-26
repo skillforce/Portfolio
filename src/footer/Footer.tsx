@@ -1,4 +1,4 @@
-import s from './Footer.module.css';
+import s from './Footer.module.scss';
 import linkedin from './footerIcon/linkedin.png';
 import codewars from './footerIcon/codewars.png';
 import github from './footerIcon/github.png';

@@ -1,0 +1,54 @@
+@import './../../../styles/variables';
+.skillItem {
+  display: inline-block;
+  height: 50%;
+  width: 300px;
+  background-color: black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px;
+  border: 4px groove $triangleBlockColor;
+  border-radius: 30px;
+  color: $SecondPrimaryTextColor;
+  -webkit-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+  @media (max-width: 1371px) {
+    height: 35%;
+  }
+  @media (max-width: 1295px) {
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .skillItemTitle {
+    p {
+      margin: 15px 0;
+    }
+
+    .skillItemTitleImg {
+      height: 85px;
+      width: 75px;
+      margin: 4px auto 0 auto;
+    }
+
+    .circleBar {
+      height: 90px;
+      width: 90px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

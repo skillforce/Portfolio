@@ -1,6 +1,4 @@
-import s from './AboutMe.module.css';
-import avatar from './imgAboutMe/avatar.jpg'
-
+import s from './AboutMe.module.scss';
 
 const {blockTitle, container, aboutMeTitle, aboutMeText, aboutMePhoto, colorBlock} = s;
 
@@ -14,8 +12,7 @@ export const AboutMe = () => {
                         <h1>I`am Denis Tatarinov.</h1>
                         <span>Frontend developer</span>
                     </div>
-                    <div className={aboutMePhoto}>
-                    </div>
+                    <div className={aboutMePhoto}></div>
                 </div>
             </div>
         </div>

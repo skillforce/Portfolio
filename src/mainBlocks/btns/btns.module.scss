@@ -1,0 +1,62 @@
+@import './../../styles/variables';
+
+.MyWorksItemTitleBtn {
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: $triangleBlockColor;
+  border-radius: 13px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase !important;
+  transition: all 0.8s ease;
+  margin: 10px;
+
+  &:hover {
+    padding: 8px 30px;
+    background-color: white;
+    transition: all 0.8s ease;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+    &:hover {
+      color: $FirstPrimaryTextColor;
+      transition: all 0.8s ease;
+    }
+  }
+
+  @media(max-width: 590px) {
+    padding: 4px 4px;
+  }
+}
+
+.MyWorksItemTitleBtnTrue {
+  button {
+    display: inline-block;
+    padding: 4px 15px;
+    border-radius: 13px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase !important;
+    transition: all 0.8s ease;
+    font-size: 25px;
+    color: $SecondPrimaryTextColor;
+    background-color: $triangleBlockColor ;
+    &:hover {
+      padding: 8px 30px;
+      background-color: $SecondPrimaryTextColor;
+      transition: all 0.8s ease;
+    }
+      &:hover {
+        color: $FirstPrimaryTextColor;
+        transition: all 0.8s ease;
+      }
+    }
+
+    @media(max-width: 590px) {
+      padding: 4px 4px;
+    }
+  }

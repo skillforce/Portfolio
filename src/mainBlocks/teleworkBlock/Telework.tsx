@@ -1,4 +1,4 @@
-import s from './Telework.module.css';
+import s from './Telework.module.scss';
 import {Btns} from '../btns/btns';
 
 
@@ -9,8 +9,8 @@ export const Telework = () => {
     return (<div className={blockTitle}>
             <div className={container}>
                 <div className={teleWorkBlock}>
-                    <p>Considering options</p> <span>for remote work</span>
-                    <div>  <Btns title={'employ me'}/></div>
+                    <p>Consider options</p> <span>for remote work</span>
+                    <div><Btns type={'link'} title={'employ me'}/></div>
 
                 </div>
             </div>

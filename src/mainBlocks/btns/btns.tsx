@@ -1,20 +1,23 @@
-import s from './btns.module.css';
+import s from './btns.module.scss';
 
 const {
-
-    MyWorksItemTitleBtn
+    MyWorksItemTitleBtn,
+    MyWorksItemTitleBtnTrue
 } = s;
 
-
 type BtnsPropsType = {
-    title:string
+    title: string
+    type: 'submit' | 'link'
 }
 
-export const Btns = (pr:BtnsPropsType) => {
-    const{title}=pr;
+export const Btns = (pr: BtnsPropsType) => {
+    const {title, type} = pr;
     return (
-        <div className={MyWorksItemTitleBtn}>
-            <a href="#">{title}</a>
+        <div className={type==='link'?MyWorksItemTitleBtn:MyWorksItemTitleBtnTrue}>
+            {type === 'link' && <a href="#">{title}</a>}
+            {type === 'submit' && <button type='submit'>
+                {title}
+            </button>}
         </div>
     )
 }

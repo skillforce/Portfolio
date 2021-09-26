@@ -1,4 +1,4 @@
-import s from './Skills.module.css';
+import s from './Skills.module.scss';
 import {SkillBox} from './skillBox/SkillBox';
 import reactImg from './skillBox/skillImgIcon/REACT.png';
 import JSImg from './skillBox/skillImgIcon/JS.png';

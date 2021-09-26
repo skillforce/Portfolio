@@ -1,4 +1,4 @@
-import s from './MyWorks.module.css';
+import s from './MyWorks.module.scss';
 import {WorksBox} from './WorksBox/WorksBox';
 import socialNet from './imgWorks/socialNetWork.png';
 import counter from './imgWorks/Counter.png';
@@ -16,11 +16,11 @@ const {
 export const MyWorks = () => {
 
 
-    const socialPrjImg={
-        backgroundImage:`url(${socialNet})`
+    const socialPrjImg = {
+        backgroundImage: `url(${socialNet})`
     }
-    const counterPrjImg={
-        backgroundImage:`url(${counter})`
+    const counterPrjImg = {
+        backgroundImage: `url(${counter})`
     }
     return (<div className={blockTitle}>
             <div className={container}>
@@ -29,8 +29,10 @@ export const MyWorks = () => {
                         <span>My</span> <p>works</p>
                     </div>
                     <div className={MyWorksMain}>
-                    <WorksBox styleImg={socialPrjImg} descriptions={'Look at my social network'} name={'Samyrai way project'}/>
-                    <WorksBox styleImg={counterPrjImg} descriptions={'Look at my counter'} name={'Counter(with Redux using)'}/>
+                        <WorksBox styleImg={socialPrjImg} descriptions={'Look at my social network'}
+                                  name={'Samyrai way project'}/>
+                        <WorksBox styleImg={counterPrjImg} descriptions={'Look at my counter'}
+                                  name={'Counter(with Redux using)'}/>
                     </div>
                 </div>
             </div>

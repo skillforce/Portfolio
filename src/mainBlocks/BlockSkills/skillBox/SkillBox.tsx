@@ -1,6 +1,7 @@
-import s from './SkillBox.module.css';
+import s from './SkillBox.module.scss';
 import {buildStyles, CircularProgressbar} from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+
 
 
 const {

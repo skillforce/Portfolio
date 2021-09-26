@@ -1,4 +1,4 @@
-import s from './WorksBox.module.css';
+import s from './WorksBox.module.scss';
 import {Btns} from '../../btns/btns';
 
 const {
@@ -10,20 +10,20 @@ const {
     MyWorksItemMainName,
 } = s;
 
-type WorksBoxType={
-    name:string
-    descriptions:string
-    styleImg:any
+type WorksBoxType = {
+    name: string
+    descriptions: string
+    styleImg: any
 }
 
 
-export const WorksBox = (props:WorksBoxType) => {
-    const {name,descriptions,styleImg}=props;
+export const WorksBox = (props: WorksBoxType) => {
+    const {name, descriptions, styleImg} = props;
 
     return (<div className={MyWorksItem}>
             <div className={MyWorksItemTitle}>
-                <div style = {styleImg} className={MyWorksItemTitleImg}>
-                    <Btns title={'Look'}/>
+                <div style={styleImg} className={MyWorksItemTitleImg}>
+                    <Btns type={'link'} title={'Look'}/>
                 </div>
             </div>
             <div className={MyWorksItemMain}>

@@ -1,4 +1,4 @@
-import s from './header.module.css';
+import s from './header.module.scss';
 import {Nav} from './NavBar/Nav';
 
 

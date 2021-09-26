@@ -1,0 +1,98 @@
+@import './../../styles/variables';
+
+
+.blockTitle {
+  width: 100%;
+  min-height: 240px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1.9fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-template-areas:
+    "."
+    "h"
+    ".";
+
+  .container {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    grid-area: h;
+
+    .teleWorkBlock {
+      background-color: black;
+      position: relative;
+      z-index: 111;
+      height: 168px;
+      border: 4px groove $triangleBlockColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      -webkit-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+      box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+      border-radius: 30px;
+      padding: 10px 0;
+      white-space: break-spaces;
+
+      span {
+        font-size: 45px;
+        display: inline-block;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase !important;
+        color: $SecondPrimaryTextColor;
+        line-height: 60px;
+        transition: all 0.8s ease;
+
+        &:hover {
+          color: $FirstPrimaryTextColor;
+          transition: all 0.8s ease;
+          cursor: default;
+        }
+      }
+
+      p {
+        font-size: 45px;
+        display: inline-block;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase !important;
+        color: $FirstPrimaryTextColor;
+        line-height: 60px;
+        transition: all 0.8s ease;
+
+        &:hover {
+          color: $SecondPrimaryTextColor;
+          transition: all 0.8s ease;
+          cursor: default;
+        }
+      }
+
+      @media (max-width: 757px) {
+        span {
+          font-size: 28px;
+        }
+        p {
+          font-size: 31px;
+        }
+      }
+      @media (max-width: 590px) {
+        p {
+          text-align: center;
+        }
+      }
+      @media (max-width: 440px) {
+        span {
+          font-size: 19px;
+          line-height: 26px;
+        }
+        p {
+          font-size: 19px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
