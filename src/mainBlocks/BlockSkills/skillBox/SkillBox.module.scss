@@ -14,6 +14,14 @@
   -webkit-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
   box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.6s ease;
+  &:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+    border: 4px groove $SecondPrimaryTextColor;
+    color:$triangleBlockColor;
+    background-color: #2F4F4F;
+  }
   @media (max-width: 1371px) {
     height: 35%;
   }

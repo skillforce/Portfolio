@@ -50,6 +50,12 @@
         -webkit-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
         -moz-box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
         box-shadow: -16px 21px 13px 8px rgba(0, 0, 0, 0.4);
+        transition: all 0.7s ease;
+        &:hover{
+          transition: all 0.7s ease;
+          height: 125%;
+          width: 460px;
+        }
 
         @media(max-width: 1150px) {
           border-radius: 50%;

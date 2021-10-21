@@ -13,10 +13,10 @@ export const Nav = () => {
     return (
 
         <div className={header_nav}>
-          <HeaderElement img={me} text={'Me'} alt={'About me'} href={'#'}/>
-          <HeaderElement img={skills} text={'Skills'} alt={'MySkills'} href={'#'}/>
-          <HeaderElement img={cases} text={'Cases'} alt={'Portfolio'} href={'#'}/>
-          <HeaderElement img={contacts} text={'Contacts'} alt={'Contacts'} href={'#'}/>
+          <HeaderElement img={me} text={'Me'} alt={'About me'} href={'#AboutMe'}/>
+          <HeaderElement img={skills} text={'Skills'} alt={'MySkills'} href={'#MySkills'}/>
+          <HeaderElement img={cases} text={'Cases'} alt={'Portfolio'} href={'#MyWorksBlock'}/>
+          <HeaderElement img={contacts} text={'Contacts'} alt={'Contacts'} href={'#footer'}/>
         </div>
     )
 }

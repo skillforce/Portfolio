@@ -2,7 +2,8 @@ import s from './MyWorks.module.scss';
 import {WorksBox} from './WorksBox/WorksBox';
 import socialNet from './imgWorks/socialNetWork.png';
 import counter from './imgWorks/Counter.png';
-
+// @ts-ignore
+import Rotate from 'react-reveal/Fade'
 
 const {
     MyWorksTitle,
@@ -22,20 +23,22 @@ export const MyWorks = () => {
     const counterPrjImg = {
         backgroundImage: `url(${counter})`
     }
-    return (<div className={blockTitle}>
+    return (<div id={'MyWorksBlock'} className={blockTitle}>
+        <Rotate top left>
             <div className={container}>
                 <div className={MyWorksBlock}>
                     <div className={MyWorksTitle}>
                         <span>My</span> <p>works</p>
                     </div>
                     <div className={MyWorksMain}>
-                        <WorksBox styleImg={socialPrjImg} descriptions={'Look at my social network'}
+                        <WorksBox href={'https://skillforce.github.io/samyrai_way_ts/#/'} styleImg={socialPrjImg} descriptions={'Look at my social network'}
                                   name={'Samyrai way project'}/>
-                        <WorksBox styleImg={counterPrjImg} descriptions={'Look at my counter'}
+                        <WorksBox href={'https://skillforce.github.io/CounterRedux/#/first'} styleImg={counterPrjImg} descriptions={'Look at my counter'}
                                   name={'Counter(with Redux using)'}/>
                     </div>
                 </div>
             </div>
+        </Rotate>
         </div>
     )
 }

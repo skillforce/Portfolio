@@ -14,16 +14,18 @@ type WorksBoxType = {
     name: string
     descriptions: string
     styleImg: any
+    href?:string
 }
 
 
 export const WorksBox = (props: WorksBoxType) => {
-    const {name, descriptions, styleImg} = props;
+    const {name, descriptions, styleImg,href} = props;
 
     return (<div className={MyWorksItem}>
+
             <div className={MyWorksItemTitle}>
                 <div style={styleImg} className={MyWorksItemTitleImg}>
-                    <Btns type={'link'} title={'Look'}/>
+                    <Btns href={href} type={'link'} title={'Look'}/>
                 </div>
             </div>
             <div className={MyWorksItemMain}>
@@ -34,6 +36,7 @@ export const WorksBox = (props: WorksBoxType) => {
                     <p>{descriptions}</p>
                 </div>
             </div>
+
         </div>
     )
 }
