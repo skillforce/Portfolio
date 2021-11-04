@@ -3,6 +3,7 @@ import './App.css';
 import {Header} from './header/header';
 import {Main} from './mainBlocks/Main';
 import {Footer} from './footer/Footer';
+import {Preloader} from './mainBlocks/Contacts/Preloader/Preloader';
 
 function App() {
     return (<>
